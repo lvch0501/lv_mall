@@ -197,7 +197,7 @@
     count(1)
     from mall_user
     where password=#{password}
-    and id=#{userid}
+    and id=#{userId}
   </select>
 
   <select id="checkEmailByUserId" resultType="int" parameterType="map">
@@ -205,6 +205,6 @@
     count(1)
     from mall_user
     where email=#{email}
-    and id != #{userid}
+    and id != #{userId}
   </select>
 </mapper>
